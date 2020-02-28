@@ -126,3 +126,11 @@ header {
     opacity: 1;
     visibility: visible;
 }
+
+iframe {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
