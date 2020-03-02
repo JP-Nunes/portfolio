@@ -1,0 +1,116 @@
+{% extends "layout.html" %}
+
+    <head>
+
+        {% block head %}
+
+        <title>Portfolio JP-Nunes</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        {% endblock %}
+
+    </head>
+
+
+    <body>
+
+        {% block content %}
+
+        <div id="wrapper">
+            <h1>Aulas</h1>
+        </div>
+
+        <section class="cards">
+            <div class="card" id="2DJtGCesOr4">
+                <div class="card-image-container">
+                    <img src="http://i3.ytimg.com/vi/2DJtGCesOr4/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>Envio de e-mails em massa  com Amazon SES, Node.JS, Typescript e Redis</p>
+                </div>
+                <div class="card-info">
+                    <p>57 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="P65RJTTqkN4">
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/P65RJTTqkN4/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>Formulários no ReactJS e React Native com Unform</p>
+                </div>
+                <div class="card-info">
+                    <p>49 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="C8TrGTgvLkc">
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/C8TrGTgvLkc/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>App (RS/XP)Cache de imagens e regulamento</p>
+                </div>
+                <div class="card-info">
+                    <p>37 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="3t78tTWt-JY">
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/3t78tTWt-JY/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>App (RS/XP) Iniciando projeto com Adonis</p>
+                </div>
+                <div class="card-info">
+                    <p>59 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="tjgCJgm8K3A">
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/tjgCJgm8K3A/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>Nova API do React Navigation</p>
+                </div>
+                <div class="card-info">
+                    <p>62 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+            <div class="card" id="HN1UjzRSdBk">
+                <div class="card-image-container">
+                    <img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="Video Aula">
+                </div>
+                <div class="card-content">
+                    <p>Desvendando o CSS Grid na prática</p>
+                </div>
+                <div class="card-info">
+                    <p>45 min</p>
+                    <p class="card-price">Free</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+                <div class="modal-content">
+                    <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <script src="scripts.js"></script>
+        
+        {% endblock %}
+        
+    </body>
