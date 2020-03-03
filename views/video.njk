@@ -2,7 +2,7 @@
 
     {% block head %}
 
-        <title>Portfolio JP-Nunes</title>
+        <title>{{ item.title }}</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap">
         <link rel="stylesheet" href="styles.css">
@@ -12,19 +12,15 @@
 
     {% block content %}
 
-        <div id="wrapper">
-            <h1>Aulas</h1>
+        <div id="wrapper" class= "video">
+            <h1>{{ item.title }}</h1>
         </div>
   
-        <section class="cards">
+        <section class="video">
             
-            {% for item in items %}
             <div class="card" id="{{item.id}}">
-                <div class="card-image-container {{ 'featured-wrapper' if item.featured }}">
-                    <img src="http://i3.ytimg.com/vi/{{item.id}}/maxresdefault.jpg" alt="imagem de {{item.title}}">
-                    {% if item.featured %}
-                        <div class="featured">Featured</div>
-                    {% endif %}
+                <div class="card-video-container">
+                    <iframe src="https://www.youtube.com/embed/{{ item.id }}" frameborder="0"></iframe>
                 </div>
                 <div class="card-content">
                     <p>{{item.title}}</p>
@@ -34,12 +30,7 @@
                     <p class="card-price">{{item.price}}</p>
                 </div>
             </div>
-            {% endfor %}
 
         </section>
         
-        <script src="/scripts.js"></script>
-        
     {% endblock %}
-        
-    </body>

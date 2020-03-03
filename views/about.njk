@@ -2,28 +2,28 @@
 
 {% block head %}
 
-<title>JP-Nunes</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap">
-<link rel="stylesheet" href="/styles.css">
+    <title>JP-Nunes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap">
+    <link rel="stylesheet" href="/styles.css">
 
 {% endblock%}
 
 {% block content %}
 
-<div id="wrapper">
-    <img src="{{ about.avatar_src }}" alt="Imagem de {{ about.name }}">
-    <h1>{{ about.name }}</h1>
-    <h2>{{ about.role }}</h2>
-    <p>{{ about.description }}</p>
-</div>
+    <div id="wrapper">
+        <img src="{{ about.avatar_src }}" alt="Imagem de {{ about.name }}">
+        <h1>{{ about.name }}</h1>
+        <h2>{{ about.role }}</h2>
+        <p>{{ about.description }}</p>
+    </div>
 
-<div id="links-footer" class="links">
+    <div id="links-footer" class="links">
     
     {% for link in about.links %}
     <a href="{{ link.url }}">{{ link.name }}</a>
     {% endfor %}
 
-</div>
+    </div>
 
 {% endblock %}
