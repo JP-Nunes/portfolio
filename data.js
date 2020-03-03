@@ -3,7 +3,8 @@ module.exports = [
         id: "2DJtGCesOr4",
         title: "Envio de e-mails em massa  com Amazon SES, Node.JS, Typescript e Redis",
         duration: "57 min",
-        price: "free"
+        price: "free",
+        featured: "true"
     },
     {
         id: "P65RJTTqkN4",
@@ -15,7 +16,8 @@ module.exports = [
         id: "C8TrGTgvLkc",
         title: "App (RS/XP)Cache de imagens e regulamento",
         duration: "37 min",
-        price: "free"
+        price: "free",
+        featured: "true"
     },
     {
         id: "3t78tTWt-JY",
@@ -27,7 +29,8 @@ module.exports = [
         id: "tjgCJgm8K3A",
         title: "Nova API do React Navigation",
         duration: "62 min",
-        price: "free"
+        price: "free",
+        featured: "true"
     },
     {
         id: "HN1UjzRSdBk",
