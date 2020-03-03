@@ -57,6 +57,9 @@ header {
     font-size: 16px;
     line-height: 20px;
 }
+#wrapper h1 {
+    color: white;
+}
 #links-footer a {
     text-decoration: underline;
 }
@@ -94,7 +97,6 @@ header {
     border-radius: 20px;
     text-align: center;
 }
-
 /* === MODAL === */
 
 .modal-overlay {
@@ -106,15 +108,13 @@ header {
     opacity: 0;
     visibility: hidden;
 }
-
 .modal {
     background-color: white;
     width: 90%;
     height: 90%;
     margin: 5vh auto;
-    position: relative;
+    position: relative; 
 }
-
 .modal .close-modal {
     color: black;
     position: absolute;
@@ -123,27 +123,11 @@ header {
     cursor: pointer;
 }
 
-/* === MODAL.ACTIVE === */
-
-.modal-overlay.active {
-    opacity: 1;
-    visibility: visible;
-}
-
-iframe {
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    top: 7%;
-    left: 5%;
-}
-
 /* === FEATURED === */
 
 .featured-wrapper.card-image-container {
     position: relative;
 }
-
 .featured {
     background-color: #f7d85f;
     color: #111;
@@ -152,4 +136,24 @@ iframe {
     right: 2px;
     border-radius: 16px;
     top: -6px;
+}
+
+/* === VIDEO PAGE === */
+
+.card-video-container iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+.card-video-container {
+    position: relative;
+    padding-top: 65%;
+}
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.video .card {
+    cursor: initial;
 }
