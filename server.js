@@ -4,20 +4,32 @@ const videos = require('./data')
 
 const server = express()
 
-server.use(express.static('public'))
-server.set('view engine', 'njk')
+server.use(express.static("public")),
+server.set("view engine", "njk")
 
-nunjucks.configure('views', {
-    express:server
+nunjucks.configure("views", {
+    express: server,
+    autoescape: false
 })
 
-server.get('/', function(req, res) {
-    return res.render('about')
+server.get("/", function(req, res) {
+    const dataAbout = {
+        avatar_src: "/images/portfolio-image.jfif",
+        name: "João Pedro Nunes",
+        role: "Desenvolvedor JavaScript",
+        description: "Programador focado em aprendizado e melhoria contínua, aluno da <a href='https://rocketseat.com.br' target='_blank'>Rocketseat</a>",
+        links: [
+            { name: "Github", url: "https://github.com/JP-Nunes"},
+            { name: "LinkedIn", url: "https://www.linkedin.com/in/jo%C3%A3o-p-nunes-java-e-javascriptdev/"}
+        ]
+    }
+    return res.render("about", { about: dataAbout })
 })
+
 server.get('/portfolio', function(req, res) {
-    return res.render('portfolio', { items: videos })
+    return res.render("portfolio", { items: videos })
 })
 
 server.listen(5000, function() {
-    console.log('server is running')
+    console.log("server is running")
 })

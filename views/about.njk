@@ -12,17 +12,18 @@
 {% block content %}
 
 <div id="wrapper">
-    <img src="/images/portfolio-image.jfif" alt="JP-Nunes">
-    <h1>João Pedro Nunes</h1>
-    <h2>Desenvolvedor JavaScript</h2>
-    <p>Programador focado em aprendizado e melhoria contínua, 
-        aluno da <a href="https://rocketseat.com.br" target="_blank">Rocketseat</a>
-    </p>
+    <img src="{{ about.avatar_src }}" alt="Imagem de {{ about.name }}">
+    <h1>{{ about.name }}</h1>
+    <h2>{{ about.role }}</h2>
+    <p>{{ about.description }}</p>
 </div>
 
 <div id="links-footer" class="links">
-    <a href="https://github.com/JP-Nunes">GitHub</a>
-    <a href="https://www.linkedin.com/in/jo%C3%A3o-p-nunes-java-e-javascriptdev/">LinkedIn</a>
+    
+    {% for link in about.links %}
+    <a href="{{ link.url }}">{{ link.name }}</a>
+    {% endfor %}
+
 </div>
 
 {% endblock %}
